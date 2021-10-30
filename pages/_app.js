@@ -9,4 +9,12 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      test: 'ward',
+    },
+  }
+}
+
 export default MyApp
